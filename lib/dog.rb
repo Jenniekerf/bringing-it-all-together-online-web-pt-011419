@@ -84,7 +84,11 @@ def self.new_from_db(row)
   end
   
   def update
-    
+   sql = <<-SQL
+   UPDATE dogs
+   SET some_column = some_value
+   WHERE some_column = some_value; 
+   SQL
   end
   
 end
