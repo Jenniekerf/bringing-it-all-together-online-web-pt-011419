@@ -86,7 +86,7 @@ def self.new_from_db(row)
   def update
    sql = <<-SQL
    UPDATE dogs
-   SET name = 'Teddy'
+   SET name = 'Teddy Jr'
    WHERE name = some_value; 
    SQL
   end
