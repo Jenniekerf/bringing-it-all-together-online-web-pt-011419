@@ -86,9 +86,10 @@ def self.new_from_db(row)
   def update
    sql = <<-SQL
    UPDATE dogs
-   SET name = 'Teddy Jr'
-   WHERE name = some_value; 
+   SET name = "Teddy Jr."
+   WHERE name = "Teddy"; 
    SQL
+   DB[:conn].execute(sql)
   end
   
 end
